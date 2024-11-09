@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Currículum Vitae</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #0D6EFD;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            background-color: #6EA8FE;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #ffa500;
+        }
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .profile-pic {
+            width: 250px;
+            height: 300px;
+            border-radius: 50%;
+            margin: 0 auto;
+            display: block;
+        }
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Mi Currículum Vitae</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="futbol.html">Fútbol</a></li>
+        <li><a href="postres.html">Postres</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <!-- Foto de perfil -->
+    <div class="section">
+        <img src="images/isaac.jpeg" alt="Foto de perfil" class="profile-pic">
+        <p style="text-align:center;"><b>Isaac Jared Luviano Hernández</b></p>
+    </div>
+
+    <!-- Descripción -->
+    <div class="section">
+        <h2>Sobre mí</h2>
+        <p>Soy un aspirante a desarrollador con conocimientos en programación básica en C++ y Java, Python enfocado en ciencia de datos e inteligencia artificial, y experiencia en desarrollo de bases de datos. Apasionado por el aprendizaje constante y la innovación en tecnología.</p>
+    </div>
+
+    <!-- Skills -->
+    <div class="section">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>Programación en C++ y Java para desarrollo de aplicaciones</li>
+            <li>Python orientado a ciencia de datos e inteligencia artificial</li>
+            <li>Desarrollo y gestión de bases de datos en MySQL y Postgres</li>
+        </ul>
+    </div>
+
+    <!-- Hobbies -->
+    <div class="section">
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Escuchar música</li>
+            <li>Jugar videojuegos</li>
+            <li>Programación recreativa</li>
+        </ul>
+    </div>
+
+    <!-- Formulario de contacto -->
+    <div class="section">
+        <h2>Contáctame</h2>
+        <form action="mailto:tu_email@ejemplo.com" method="post" enctype="text/plain">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
